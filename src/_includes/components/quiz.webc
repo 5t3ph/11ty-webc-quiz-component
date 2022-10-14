@@ -1,0 +1,8 @@
+<p>I am quiz!?</p>
+
+<style webc:scoped>
+  :host {
+    color: blue;
+  }
+</style>
+
