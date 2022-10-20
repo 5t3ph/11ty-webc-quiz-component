@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>{{ page.url | webcGetCss | safe }}</style>
-  <script>{{ page.url | webcGetJs | safe }}</script>
+  <script type="module">{{ page.url | webcGetJs | safe }}</script>
 </head>
 <body>
   {{ content | safe }}
