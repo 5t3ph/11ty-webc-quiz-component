@@ -1,8 +1,16 @@
-<p>I am quiz!?</p>
+<template webc:keep webc:type="11ty">
+  <form>
+    <fieldset>
+      <legend @html="legend"></legend>
+      <slot name="a"></slot>
+      <slot name="b"></slot>
+      <slot name="c"></slot>
+    </fieldset>
+  </form>
+</template>
 
 <style webc:scoped>
   :host {
     color: blue;
   }
 </style>
-

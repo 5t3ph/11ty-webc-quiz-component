@@ -5,7 +5,8 @@ layout: base
 <h1>11ty WebC Quiz Component</h1>
 
 {% renderTemplate "webc" %}
-<quiz></quiz>
+<quiz legend="Question?">
+  <answer slot="a" label="Option A" name="question"></answer>
+  <answer slot="b" label="Option B" name="question"></answer>
+</quiz>
 {% endrenderTemplate %}
-
-<p>I'm outside the quiz component</p>

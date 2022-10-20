@@ -1,0 +1,4 @@
+<label :for="uid">
+  <input type="radio" :name="name" :id="uid">
+  <span webc:nokeep @html="label"></span>
+</label>
