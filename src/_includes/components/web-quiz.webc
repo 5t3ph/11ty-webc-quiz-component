@@ -1,3 +1,11 @@
+<!-- 
+  TODO:
+  - provide results to user
+  - persist total score to supabase
+  - save user state to localstorage
+  - style/handle addvanced questions and answers
+-->
+
 <template webc:keep webc:type="11ty">
   <form>
     <fieldset>
@@ -6,12 +14,29 @@
       <slot name="b"></slot>
       <slot name="c"></slot>
     </fieldset>
+    <button type="submit" class="button">Check answer</button>
   </form>
 </template>
 
 <style webc:scoped>
-  :host {
-    color: blue;
+  form {
+    padding: 5%;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0.05rem 0.25rem 0.5rem -0.15rem rgba(0, 0, 0, 0.5);
+    border: 2px solid transparent;
+  }
+
+  fieldset {
+    padding: 0;
+    border: none;
+    margin-bottom: 2rem;
+  }
+
+  legend {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
   }
 </style>
 
